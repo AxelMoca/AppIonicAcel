@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Usuarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="!isLoading && !error">
+    <ion-item *ngFor="let user of users">
+      {{ user.name }}
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="isLoading">
+    <ion-spinner></ion-spinner> Cargando usuarios..
+  </div>
+
+  <div *ngIf="error">
+    {{ error }}
+  </div>
+</ion-content>

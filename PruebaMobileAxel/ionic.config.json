@@ -1,0 +1,7 @@
+{
+  "name": "PruebaMobileAxel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
